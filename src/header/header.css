@@ -1,0 +1,43 @@
+.header_all {
+    width: 1440px;
+    height: 96px;
+    background: #31C1BB;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+}
+
+.header_right_div {
+    width: 500px;
+    height: 96px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: end;
+    
+    align-items: center;
+}
+.header_right_div_dad{
+    width: 180px;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.header_left_div {
+    width: 110px;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: pink; */
+}
+
+.header_p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    color: #F9F9F9;
+    ;
+}

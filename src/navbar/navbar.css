@@ -1,0 +1,89 @@
+.navbar_all {
+    width: 420px;
+    /* position: absolute; */
+    top: 1px;
+    z-index: 100;
+    /* background-color: palevioletred; */
+}
+
+.navbar_all2 {
+    width: 314px;
+    height: 774px;
+    border-radius: 12px 0px 0px 12px;
+    box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.10);
+    position: absolute;
+    top: 1px;
+    z-index: 100;
+    background-color: white;
+}
+
+.admin_prof {
+    height: 251px;
+    width: 314px;
+    background-color: #FBFBFB;
+    border-radius: 12px 12px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar_item {
+    background: linear-gradient(0.38deg, rgba(249, 249, 249, 0.54) 60.39%, rgba(229, 242, 242, 0.54) 99.66%);
+    height: 523px;
+    width: 314px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.admin_prof_cercle {
+    width: 126px;
+    height: 126px;
+    background-color: #E5F2F2;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.admin_name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    color: #000000;
+}
+
+.admin_prof_btn {
+    width: 132px;
+    height: 29px;
+    border-radius: 12px;
+    background-color: #961D4E;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: center;
+    color: #F9F9F9;
+}
+
+.admi_navbar_map_div {
+    width: 250px;
+    height: 54px;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.admi_map_p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    color: #959595;
+}
