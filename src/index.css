@@ -20,3 +20,7 @@ body {
   src: url(./Font/Farsinumerals/IRANSansXFaNum-Medium.ttf);
 }
 
+@font-face {
+  font-family: "IRANSansXFaNum";
+  src: url(./Font/Farsinumerals/IRANSansXFaNum-Bold.ttf);
+}

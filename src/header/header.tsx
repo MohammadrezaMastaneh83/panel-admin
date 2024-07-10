@@ -27,7 +27,7 @@ export default function Header() {
                 ali = "تیکت ها"
                 svg = message
             }else {
-                if (location.pathname === '') {
+                if (location.pathname === '/Dashbord') {
                     ali = "داشبورد"
                     svg = dashbordSvg
                 }else {

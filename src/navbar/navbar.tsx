@@ -68,9 +68,11 @@ export default function Navbar() {
                 <div className="navbar_item">
                     {navabr.map((item, index) => {
                         return (
+
                             <Link to={item.path} key={index} style={{
                                 textDecoration: "none"
                             }}>
+
                                 <div
                                     className="admi_navbar_map_div"
                                 >
@@ -96,6 +98,7 @@ export default function Navbar() {
                                                 : {}),
                                         }}
                                     >
+
                                         {item.p}
                                     </span>
                                 </div>

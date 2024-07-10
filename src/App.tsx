@@ -12,7 +12,7 @@ import Services from './Services/Services';
 import AplouaNews from './AplouaNews/AplouaNews';
 import Transaction from './Transaction/Transaction';
 import { useLocation } from 'react-router-dom';
-import Dashbord from "./dashbord/dashbord";
+import Dashbord from "./Dashbord/dashbord";
 
 function App() {
   
