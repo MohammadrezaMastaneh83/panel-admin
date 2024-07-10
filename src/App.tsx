@@ -12,6 +12,7 @@ import Services from './Services/Services';
 import AplouaNews from './AplouaNews/AplouaNews';
 import Transaction from './Transaction/Transaction';
 import { useLocation } from 'react-router-dom';
+import Dashbord from "./dashbord/dashbord";
 
 function App() {
   
@@ -24,6 +25,7 @@ function App() {
           <Navbar />
           <div className='mainnnnn'>
             <Routes>
+              <Route path='/Dashbord' element={<Dashbord/>} />
               <Route path='/Information' element={<Info />} />
               <Route path='/Users' element={<User />} />
               <Route path='/Ticket' element={<Ticket />} />

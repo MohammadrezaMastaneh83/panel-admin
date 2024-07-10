@@ -33,6 +33,7 @@ export default function Navbar() {
             p: "تیکت ها",
             path: "/Ticket"
         },
+
         {
             svg: support,
             p: "حمایت ها",
