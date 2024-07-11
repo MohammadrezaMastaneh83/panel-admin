@@ -1,8 +1,14 @@
-
 import './dashbord.css';
+import {useState} from "react";
+import chevron from  '../public2/Chevron.svg'
+import blackchevron from  '../public2/blackvhevrolett.svg'
 export default function Dashbord() {
 
-    return( <div className="aval">
+    const [view , setview] = useState(2800)
+    const [resive , setresive] = useState(350)
+    const [subscribe , setsubscribe] = useState(1200)
+    const [complitproje , setcomplitproje] = useState(820)
+    return (<div className="aval">
 
         <div className="dovvom">
 
@@ -11,26 +17,81 @@ export default function Dashbord() {
 
                 <div className='box'>
 
-                    <div className='balab'>
-                        <div className='numer'>2800</div>
-                    </div>
-                    <div className='paien'>
-                    <p className='mabblaq'>مبلغ کلی دریافت شده</p>
-                    </div>
+
+                        <div className='numer'>{view}</div>
+
+                        <p className='mabblaq2'>بازدیدکنندگان</p>
+
+                </div>
+                <div className='box2'>
+                    <div className='divvvhafkhat'>
+                    <p className='numer'>{resive}</p>
+                        <p className='pprice'>میلیون</p>
+                </div>
+                    <p className='mabblaq2'>مبلغ کلی دریافت شده</p>
                 </div>
                 <div className='box'>
 
-                </div>
-                <div className='box'>
+                    <div className='numer'>{subscribe}</div>
+
+                    <p className='mabblaq2'>تعداد کاربران</p>
 
                 </div>
 
-                <div className='box'>
+                <div className='box2'>
+
+                    <div className='numer'>{complitproje}</div>
+
+                    <p className='mabblaq2'>پروژه تکمیل شده</p>
 
                 </div>
+
+
             </div>
+            <div className='peldovvom'>
+
+                <div className='nemodarradif'>
+                      <p className='nemodarp'>نمودار ها</p>
+                </div>
+                <div className='nemodarradif2'>
+
+                    <div className='dropdown'>
+
+                    <p className='barasas'>بر اساس</p>
+
+                        <div className='imgae'>
+                        </div>
+
+                    </div>
+
+                    <div className='dropdown'>
+                        <p className='barasas'>از ماه</p>
+                        <div className='imgae'>
+                        </div>
+
+
+                    </div>
+
+                    <div className='dropdown'>
+                        <p className='barasas'>تا ماه</p>
+
+                        <div className='imgae'>
+                        </div>
+                    </div>
+
+                    <div className='dropdown'>
+                        <p className='barasas'>سال</p>
+
+                        <div className='imgae'>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
         </div>
 
 
-           </div>)
+    </div>)
 }

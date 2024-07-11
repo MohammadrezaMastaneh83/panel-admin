@@ -14,13 +14,34 @@ body {
 }
 
 
-
 @font-face {
   font-family: "IRANSansXFaNum";
-  src: url(./Font/Farsinumerals/IRANSansXFaNum-Medium.ttf);
+  src: url(./Font/Farsinumerals/IRANSansXFaNum-Medium.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "IRANSansXFaNum";
-  src: url(./Font/Farsinumerals/IRANSansXFaNum-Bold.ttf);
+  src: url(./Font/Farsinumerals/IRANSansXFaNum-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: "IRANSansXFaNum";
+  src: url(./Font/Farsinumerals/IRANSansXFaNum-DemiBold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IRANSansXFaNum";
+  src: url(./Font/Farsinumerals/IRANSansXFaNum-ExtraBold.ttf) format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+
+

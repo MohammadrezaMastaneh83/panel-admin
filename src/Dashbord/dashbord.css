@@ -18,7 +18,7 @@ border-radius: 0;
 }
 .peleaval{
     width: 100%;
-    height: 300px;
+    height: 250px;
     background-color: blue;
     display: flex;
     align-items: center;
@@ -26,11 +26,27 @@ border-radius: 0;
     gap: 32px;
     flex-direction: row;
 }
-.box{
-
+.peldovvom{
+    width: 100%;
+    height: 232px;
+    background: blueviolet;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    flex-direction: column;
+
+
+
+
+}
+
+
+
+.box{
+gap: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     border-radius: 12px;
     width: 217px;
@@ -38,21 +54,31 @@ border-radius: 0;
     background-color: rgba(250, 238, 243, 1);
 
 }
+.box2{
+    gap: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 12px;
+    width: 217px;
+    height: 136px;
+    background-color:  rgba(249, 249, 249, 1);
+;
+
+}
 .numer{
 
-    font-weight: 700;
-    color: black;
-    size: 32px;
-    line-height: 48px;
-}
-.mabblaq{
-    font-weight: 700;
-    color: black;
-    size: 32px;
-    line-height: 48px;
+    color: rgba(35, 35, 35, 1);
 
-    font-family: var(--Bold);
-
+    font-family: "IRANSansXFaNum";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+   width: 60px;
+    top: 176px;
+    left: 414px;
 
 }
 .balab{
@@ -61,8 +87,106 @@ height: 78px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+}
+.mabblaq2{
+
+    font-family: "IRANSansXFaNum";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(35, 35, 35, 1);
 
 }
-.paien{
+
+.divvvhafkhat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 45px;
+
+    gap: 4px;
+}
+.pprice{
+    font-family: "IRANSansXFaNum";
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+   color:  rgba(149, 149, 149, 1);
+
+}
+.nemodarradif{
+
+width: 90%;
+    height: 65px;
+    background-color: darkturquoise;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.nemodarp{
+
+    font-family: "IRANSansXFaNum";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+    color:rgba(35, 35, 35, 1);
+
+}
+.nemodarradif2{
+    width: 90%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 32px;
+}
+.dropdown{
+    width: 223px;
+    height: 47px;
+    background-color: rgba(249, 249, 249, 1);
+   border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 120px;
+
+}
+.imgae{
+    background-image: url('../public2/Chevron.svg');
+    width: 14px;
+    height: 8px;
+    background-repeat: no-repeat;
+}
+.imgae:hover{
+    background-image:  url('../public2/blackvhevrolett.svg')  ;
+    color: black;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+
+}
+
+.dropdown:hover {
+    color: black;
+    background-color: rgba(250, 238, 243, 1);
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+
+}
+
+
+.barasas{
+    color: rgba(149, 149, 149, 1);
+    font-family: "IRANSansXFaNum";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: right;
+}
+.barasas:hover {
+  color: black;
 
 }
