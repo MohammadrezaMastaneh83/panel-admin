@@ -8,6 +8,10 @@ export default function Dashbord() {
     const [resive , setresive] = useState(350)
     const [subscribe , setsubscribe] = useState(1200)
     const [complitproje , setcomplitproje] = useState(820)
+    const [barrasas , setbarrasas] = useState(false)
+    const [barrasas2 , setbarrasas2] = useState(false)
+    const [barrasas3 , setbarrasas3] = useState(false)
+    const [barrasas4 , setbarrasas4] = useState(false)
     return (<div className="aval">
 
         <div className="dovvom">
@@ -59,31 +63,25 @@ export default function Dashbord() {
 
                     <p className='barasas'>بر اساس</p>
 
-                        <div className='imgae'>
-                        </div>
-
+                        <img src={chevron} />
                     </div>
 
                     <div className='dropdown'>
                         <p className='barasas'>از ماه</p>
-                        <div className='imgae'>
-                        </div>
-
+                        <img src={chevron} />
 
                     </div>
 
                     <div className='dropdown'>
                         <p className='barasas'>تا ماه</p>
 
-                        <div className='imgae'>
-                        </div>
+                        <img src={chevron} />
                     </div>
 
                     <div className='dropdown'>
                         <p className='barasas'>سال</p>
 
-                        <div className='imgae'>
-                        </div>
+                        <img src={chevron} />
                     </div>
                 </div>
 
