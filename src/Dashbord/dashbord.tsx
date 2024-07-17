@@ -1,17 +1,32 @@
 import './dashbord.css';
 import {useState} from "react";
-import chevron from  '../public2/Chevron.svg'
-import blackchevron from  '../public2/blackvhevrolett.svg'
+import chevron from '../public2/Chevron.svg'
+import chevrobala from '../public2/Chevronbala.svg'
+
 export default function Dashbord() {
 
-    const [view , setview] = useState(2800)
-    const [resive , setresive] = useState(350)
-    const [subscribe , setsubscribe] = useState(1200)
-    const [complitproje , setcomplitproje] = useState(820)
-    const [barrasas , setbarrasas] = useState(false)
-    const [barrasas2 , setbarrasas2] = useState(false)
-    const [barrasas3 , setbarrasas3] = useState(false)
-    const [barrasas4 , setbarrasas4] = useState(false)
+    const [isOpen, setIsOpen] = useState(false);
+    const [isRotated, setIsRotated] = useState(false);
+
+
+    const toggleDropdown = () => {
+        setIsOpen(!isOpen);
+
+        setIsRotated(!isRotated);
+
+        console.log('dsidhsi')
+
+    };
+
+    const [view, setview] = useState(2800)
+    const [resive, setresive] = useState(350)
+    const [subscribe, setsubscribe] = useState(1200)
+    const [complitproje, setcomplitproje] = useState(820)
+    const [barrasas, setbarrasas] = useState(false)
+    const [barrasas2, setbarrasas2] = useState(false)
+    const [barrasas3, setbarrasas3] = useState(false)
+    const [barrasas4, setbarrasas4] = useState(false)
+
     return (<div className="aval">
 
         <div className="dovvom">
@@ -19,19 +34,20 @@ export default function Dashbord() {
 
             <div className='peleaval'>
 
+
                 <div className='box'>
 
 
-                        <div className='numer'>{view}</div>
+                    <div className='numer'>{view}</div>
 
-                        <p className='mabblaq2'>بازدیدکنندگان</p>
+                    <p className='mabblaq2'>بازدیدکنندگان</p>
 
                 </div>
                 <div className='box2'>
                     <div className='divvvhafkhat'>
-                    <p className='numer'>{resive}</p>
+                        <p className='numer'>{resive}</p>
                         <p className='pprice'>میلیون</p>
-                </div>
+                    </div>
                     <p className='mabblaq2'>مبلغ کلی دریافت شده</p>
                 </div>
                 <div className='box'>
@@ -55,34 +71,53 @@ export default function Dashbord() {
             <div className='peldovvom'>
 
                 <div className='nemodarradif'>
-                      <p className='nemodarp'>نمودار ها</p>
+                    <p className='nemodarp'>نمودار ها</p>
                 </div>
                 <div className='nemodarradif2'>
 
-                    <div className='dropdown'>
 
-                    <p className='barasas'>بر اساس</p>
+                    <div className='dropdownzir'>
 
-                        <img src={chevron} />
+
+                        <div className='dropdown' onClick={toggleDropdown}>
+
+                            <p className='barasas'>بر اساس</p>
+                            <img src={isOpen === false ? chevron : chevrobala}/>
+
+                        </div>
+
+                        <div className='opendropdoewn1'>
+
+
+                        </div>
+
                     </div>
 
                     <div className='dropdown'>
+
+
                         <p className='barasas'>از ماه</p>
-                        <img src={chevron} />
+                        <img src={chevron}/>
 
                     </div>
 
                     <div className='dropdown'>
+
                         <p className='barasas'>تا ماه</p>
+                        <img src={chevron}/>
 
-                        <img src={chevron} />
                     </div>
 
                     <div className='dropdown'>
+
+
                         <p className='barasas'>سال</p>
 
-                        <img src={chevron} />
+                        <img src={chevron}/>
+
+
                     </div>
+
                 </div>
 
 

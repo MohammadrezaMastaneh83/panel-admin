@@ -4,8 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from './header/header';
-import Navbar from './navbar/navbar';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
