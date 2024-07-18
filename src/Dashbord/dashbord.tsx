@@ -7,7 +7,7 @@ export default function Dashbord() {
 
     const [isOpen, setIsOpen] = useState(false);
     const [isRotated, setIsRotated] = useState(false);
-
+       const items = ['Item 1', 'Item 2', 'Item 3'];
 
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
@@ -81,18 +81,29 @@ export default function Dashbord() {
 
                         <div className='dropdown' onClick={toggleDropdown}>
 
-                            <p className='barasas'>بر اساس</p>
+                            <p style={isOpen ? {color :'black'}:{color :''}} className='barasas'>بر اساس</p>
                             <img src={isOpen === false ? chevron : chevrobala}/>
 
                         </div>
 
-                        <div className='opendropdoewn1'>
+                        <div style={isOpen ? { display: 'flex' } : { display: 'none' }}  className='opendropdoewn1'>
+
+                            <div className='eyk'>
+
+                            </div>
+                            <div className='eyk'>
+
+                            </div>
+                            <div className='eyk'>
+
+                            </div>
 
 
                         </div>
 
                     </div>
 
+                    <div className='dropdownzir'></div>
                     <div className='dropdown'>
 
 
