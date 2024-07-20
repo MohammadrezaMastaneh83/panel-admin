@@ -6,17 +6,33 @@ import chevrobala from '../public2/Chevronbala.svg'
 export default function Dashbord() {
 
     const [isOpen, setIsOpen] = useState(false);
+
+    const [isOpen2, setIsOpen2] = useState(false);
+    const [isOpen3, setIsOpen3] = useState(false);
+
+
     const [isRotated, setIsRotated] = useState(false);
-       const items = ['Item 1', 'Item 2', 'Item 3'];
+    const items = ['Item 1', 'Item 2', 'Item 3'];
 
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
 
-        setIsRotated(!isRotated);
+        console.log('dsidhsi')
+
+    };
+    const toggleDropdown2 = () => {
+        setIsOpen2(!isOpen2);
 
         console.log('dsidhsi')
 
     };
+    const toggleDropdown3 = () => {
+        setIsOpen3(!isOpen);
+
+        console.log('dsidhsi')
+
+    };
+
 
     const [view, setview] = useState(2800)
     const [resive, setresive] = useState(350)
@@ -80,22 +96,81 @@ export default function Dashbord() {
 
 
                         <div className='dropdown' onClick={toggleDropdown}>
-
-                            <p style={isOpen ? {color :'black'}:{color :''}} className='barasas'>بر اساس</p>
+                            <p style={isOpen ? {color: 'black'} : {color: ''}} className='barasas'>بر اساس</p>
                             <img src={isOpen === false ? chevron : chevrobala}/>
+                        </div>
+
+                        <div style={isOpen ? {display: 'flex'} : {display: 'none'}} className='opendropdoewn1'>
+
+                            <div className='eyk'>
+                                <p className='nevp'>بر اساس</p>
+                                <img src={chevron}/>
+                            </div>
+
+                            <div className='eyk2'>
+                                <p className='nevp'>بازدید آگهی</p>
+                            </div>
+
+                            <div className='eyk'>
+                                <p className='nevp'>پروژه تکمیل شده</p>
+                            </div>
+
 
                         </div>
 
-                        <div style={isOpen ? { display: 'flex' } : { display: 'none' }}  className='opendropdoewn1'>
+                    </div>
+
+
+                    <div className='dropdownzir'>
+                        <div className='dropdown' onClick={toggleDropdown2}>
+                            <p className='barasas'>از ماه</p>
+                            <img src={isOpen2 === false ? chevron : chevrobala}/>
+                        </div>
+
+                        <div style={isOpen2 ? {display: 'flex'} : {display: 'none'}} className='opendropdoewn2'>
 
                             <div className='eyk'>
-                                dddddddeuhfduwefh
+                                <p className='nevp'>بر اساس</p>
+                                <img src={chevron}/>
                             </div>
-                            <div className='eyk'>
-oiosfidosd
+
+
+                            <div className='eyk2'>
+                                <p className='nevp'>بازدید آگهی</p>
                             </div>
+
                             <div className='eyk'>
-jkdksjdsk
+                                <p className='nevp'>پروژه تکمیل شده</p>
+                              </div>
+
+                        </div>
+
+
+                    </div>
+                    <div className='dropdownzir'>
+
+                        <div className='dropdown'  style={isOpen2 ? {display: 'flex'} : {display: 'none'}}>
+                            <p className='barasas'>تا ماه</p>
+                            <img src={isOpen3 === false ? chevron : chevrobala}/>
+                        </div>
+
+
+
+                        <div style={isOpen3 ? {display: 'flex'} : {display: 'none'}} className='opendropdoewn2'>
+
+                            <div className='eyk'>
+                                <p className='nevp'>بر اساس</p>
+                                <img src={chevron}/>
+                            </div>
+
+
+
+                            <div className='eyk2'>
+                                <p className='nevp'>بازدید آگهی</p>
+                            </div>
+
+                            <div className='eyk'>
+                                <p className='nevp'>پروژه تکمیل شده</p>
                             </div>
 
 
@@ -103,39 +178,16 @@ jkdksjdsk
 
                     </div>
 
-                    <div className='dropdownzir'></div>
                     <div className='dropdown'>
-
-
-                        <p className='barasas'>از ماه</p>
-                        <img src={chevron}/>
-
-                    </div>
-
-                    <div className='dropdown'>
-
-                        <p className='barasas'>تا ماه</p>
-                        <img src={chevron}/>
-
-                    </div>
-
-                    <div className='dropdown'>
-
-
                         <p className='barasas'>سال</p>
-
                         <img src={chevron}/>
-
-
                     </div>
 
                 </div>
 
-
             </div>
 
         </div>
-
 
     </div>)
 }

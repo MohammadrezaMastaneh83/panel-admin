@@ -204,8 +204,47 @@ position: absolute;
     z-index: 1;
 top: 468px;
 }
+
+.opendropdoewn2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 223px;
+    height: 699px ;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    position: absolute;
+    z-index: 1;
+    top: 468px;
+}
+
+
 .eyk{
     width: 100%;
     height: 47px;
-    gap: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 129px;
+    padding-right: 10px;
+}
+.eyk2{
+    width: 100%;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.nevp{
+   color:rgba(149, 149, 149, 1);
+    font-family: "IRANSansXFaNum";
+font-weight: 500;
+    size: 16px;
+    line-height: 24px;
+
+}
+.nevp:hover{
+
+    color: black;
 }
