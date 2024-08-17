@@ -27,10 +27,10 @@ export default function Dashbord() {
 
     };
     const toggleDropdown3 = () => {
-        setIsOpen3(!isOpen);
+        setIsOpen3(!isOpen3);
+
 
         console.log('dsidhsi')
-
     };
 
 
@@ -141,7 +141,7 @@ export default function Dashbord() {
 
                             <div className='eyk'>
                                 <p className='nevp'>پروژه تکمیل شده</p>
-                              </div>
+                            </div>
 
                         </div>
 
@@ -149,11 +149,11 @@ export default function Dashbord() {
                     </div>
                     <div className='dropdownzir'>
 
-                        <div className='dropdown'  style={isOpen2 ? {display: 'flex'} : {display: 'none'}}>
+                        <div className='dropdown2' onClick={toggleDropdown3}>
                             <p className='barasas'>تا ماه</p>
+
                             <img src={isOpen3 === false ? chevron : chevrobala}/>
                         </div>
-
 
 
                         <div style={isOpen3 ? {display: 'flex'} : {display: 'none'}} className='opendropdoewn2'>
@@ -162,7 +162,6 @@ export default function Dashbord() {
                                 <p className='nevp'>بر اساس</p>
                                 <img src={chevron}/>
                             </div>
-
 
 
                             <div className='eyk2'>
@@ -178,7 +177,7 @@ export default function Dashbord() {
 
                     </div>
 
-                    <div className='dropdown'>
+                    <div className='dropdown3'>
                         <p className='barasas'>سال</p>
                         <img src={chevron}/>
                     </div>

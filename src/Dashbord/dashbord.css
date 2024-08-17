@@ -159,8 +159,34 @@ width: 90%;
 
 
 }
+.dropdown2{
+
+    width: 223px;
+    height: 47px;
+    background-color: rgba(249, 249, 249, 1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 120px;
 
 
+}
+.dropdown3{
+
+    width: 223px;
+    height: 47px;
+    background-color: rgba(249, 249, 249, 1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 120px;
+
+
+}
 .dropdown:hover {
     color: black;
     transition: all 0.3s ease-in-out; /* Smooth transition */
